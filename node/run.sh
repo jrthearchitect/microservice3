@@ -1,0 +1,6 @@
+#!/bin/bash
+APP_PORT=8000 \ PLAID_CLIENT_ID=5a5f9fa8efe64e3042148603 \
+PLAID_SECRET=af0b25ea24682086907b55fb6f8dbd \
+PLAID_PUBLIC_KEY=e03cedfb69dd33aa0c71c50aab6569 \ PLAID_ENV=sandbox \
+node index.js
+
