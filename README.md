@@ -1,13 +1,19 @@
-# Plaid quickstart
+### plaid-node quickstart
 
-This repository accompanies Plaid's [**quickstart guide**][quickstart]. Here you'll find full example integration apps using our [**client libraries**][resources]:
+[Quickstart guide](https://plaid.com/docs/quickstart)
 
-- [Node][node-example]
-- [Ruby][ruby-example]
-- [Python][python-example]
+``` bash
+git clone https://github.com/jrobinson17/quickstart.git
+cd quickstart/node
+npm install
 
-[quickstart]: https://plaid.com/docs/quickstart
-[resources]: https://plaid.com/docs/resources
-[node-example]: /node
-[ruby-example]: /ruby
-[python-example]: /python
+# The above call defaults to test/tartan credentials.
+# Substitute other values with any of the following:
+APP_PORT=8000 \
+PLAID_CLIENT_ID=[CLIENT_ID] \
+PLAID_SECRET=[SECRET] \
+PLAID_PUBLIC_KEY=[PUBLIC_KEY] \
+PLAID_ENV=sandbox \
+node index.js
+# Go to http://localhost:8000
+```
