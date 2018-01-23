@@ -13,4 +13,4 @@ ENV PLAID_PUBLIC_KEY=e03cedfb69dd33aa0c71c50aab6569
 ENV PLAID_ENV=sandbox
 RUN npm install
 CMD ["node", "index.js"]
-EXPOSE 8081
+EXPOSE 8000
