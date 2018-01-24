@@ -5,7 +5,7 @@ RUN apt-get -y update \
     && apt-get -y install  nodejs \
     && apt-get -y install npm \
     && apt-get -y install nodejs-legacy
-RUN git clone https://github.com/jthearchitect/microservice1.git /app/. &&  git fetch
+RUN git clone https://github.com/jthearchitect/microservice3.git /app/. &&  git fetch
 ENV APP_PORT=8000
 ENV PLAID_CLIENT_ID=5a5f9fa8efe64e3042148603
 ENV PLAID_SECRET=af0b25ea24682086907b55fb6f8dbd
